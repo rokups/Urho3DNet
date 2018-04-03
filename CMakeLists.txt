@@ -189,4 +189,5 @@ macro (csharp_bind_target)
         ${COMMON_NET_SOURCE_FILES_GENERATED} ${BINDINGS_OUTPUT_DIR}/CSharp/Config.cs
     )
     add_dependencies(${BIND_TARGET}Net ${CSHARP_LIBRARY_NAME})
+    message(WARNING "Built .net dll: ${NET_OUTPUT_DIRECTORY}/${BIND_TARGET}Net.dll")
 endmacro ()
